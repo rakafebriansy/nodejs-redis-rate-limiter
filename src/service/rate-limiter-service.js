@@ -1,7 +1,7 @@
 import { redis } from "../application/redis.js";
 
-const EXPIRE_TIME = 10;
-const MAX_REQUEST = 10;
+const EXPIRE_TIME = 1;
+const MAX_REQUEST = 2;
 
 const isAllowed = async (user) => {
     const key = user.username;
